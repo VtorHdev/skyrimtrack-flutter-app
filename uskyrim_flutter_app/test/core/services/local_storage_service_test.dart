@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:hive_test/hive_test.dart';
 import 'package:uskyrim/core/services/local_storage_service.dart';
 import 'package:uskyrim/core/constants/tracked_items.dart';
 import 'dart:convert';
@@ -9,13 +10,13 @@ void main() {
   late LocalStorageService service;
 
   setUp(() async {
+    await setUpTestHive();
     mockBox = await Hive.openBox<List<String>>('test_box');
     service = LocalStorageService(mockBox);
   });
 
   tearDown(() async {
-    await mockBox.clear();
-    await mockBox.close();
+    await tearDownTestHive();
   });
 
   group('LocalStorageService', () {
