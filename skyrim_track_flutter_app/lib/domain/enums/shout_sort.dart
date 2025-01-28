@@ -1,0 +1,1 @@
+enum ShoutSort { name, progress }

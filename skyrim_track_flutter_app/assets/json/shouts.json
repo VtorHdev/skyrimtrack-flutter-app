@@ -1,0 +1,482 @@
+{
+  "shouts": [
+    {
+      "id": "1",
+      "name": "Fuerza Implacable",
+      "description": "Tu Voz es pura fuerza, empujando todo lo que se interponga",
+      "words": [
+        {
+          "word": "Fus",
+          "translation": "Fuerza",
+          "location": "Bleak Falls Barrow"
+        },
+        {
+          "word": "Ro",
+          "translation": "Equilibrio",
+          "location": "Alto Hrothgar (Greybeards)"
+        },
+        {
+          "word": "Dah",
+          "translation": "Empujar",
+          "location": "Alto Hrothgar (Greybeards)"
+        }
+      ],
+      "cooldown": "15/20/25s"
+    },
+    {
+      "id": "2",
+      "name": "Torbellino Cortante",
+      "description": "Tu Voz toma la forma de un torbellino, que daña y desorienta a los enemigos",
+      "words": [
+        {
+          "word": "Mid",
+          "translation": "Lealtad",
+          "location": "Dustman's Cairn"
+        },
+        {
+          "word": "Vur",
+          "translation": "Valor",
+          "location": "Dead Men's Respite"
+        },
+        {
+          "word": "Shaan",
+          "translation": "Inspirar",
+          "location": "Volunruud"
+        }
+      ],
+      "cooldown": "20/25/30s"
+    },
+    {
+      "id": "3",
+      "name": "Remolinear",
+      "description": "Tu Voz agita el aire mismo, creando un ciclón que absorbe y lanza a tus enemigos",
+      "words": [
+        {
+          "word": "Ven",
+          "translation": "Viento",
+          "location": "Palabra del Dragón cerca de High Hrothgar"
+        },
+        {
+          "word": "Gaar",
+          "translation": "Desatar",
+          "location": "Palabra del Dragón en Silverdrift Lair"
+        },
+        {
+          "word": "Nos",
+          "translation": "Golpear",
+          "location": "Palabra del Dragón en Shrine of Boethiah"
+        }
+      ],
+      "cooldown": "45/40/35s"
+    },
+    {
+      "id": "4",
+      "name": "Invocar Tormenta",
+      "description": "Tu Voz invoca el poder de una tormenta, llamando a rayos desde el cielo",
+      "words": [
+        {
+          "word": "Strun",
+          "translation": "Tormenta",
+          "location": "Alto Hrothgar (Greybeards)"
+        },
+        {
+          "word": "Bah",
+          "translation": "Ira",
+          "location": "Forelhost"
+        },
+        {
+          "word": "Qo",
+          "translation": "Relámpago",
+          "location": "High Gate Ruins"
+        }
+      ],
+      "cooldown": "300/480/600s"
+    },
+    {
+      "id": "5",
+      "name": "Aspecto Dragón",
+      "description": "Tu Voz invoca el poder interior de un dragón, aumentando tu fuerza y resistencia",
+      "words": [
+        {
+          "word": "Mul",
+          "translation": "Fuerza",
+          "location": "Alto Hrothgar (Parte de la historia principal)"
+        },
+        {
+          "word": "Qah",
+          "translation": "Armadura",
+          "location": "Skuldafn (Parte de la historia principal)"
+        },
+        {
+          "word": "Diiv",
+          "translation": "Wyrm",
+          "location": "Completar misión principal"
+        }
+      ],
+      "cooldown": "300s"
+    },
+    {
+      "id": "6",
+      "name": "Aliento de Fuego",
+      "description": "Tu Voz es fuego ardiente, infligiendo daño continuo a tus enemigos",
+      "words": [
+        {
+          "word": "Yol",
+          "translation": "Fuego",
+          "location": "Alto Hrothgar (Paarthurnax)"
+        },
+        {
+          "word": "Toor",
+          "translation": "Infernal",
+          "location": "Saber del Dragón de Paarthurnax"
+        },
+        {
+          "word": "Shul",
+          "translation": "Sol",
+          "location": "Palabra del Dragón en Dragontooth Crater"
+        }
+      ],
+      "cooldown": "30/25/20s"
+    },
+    {
+      "id": "7",
+      "name": "Aliento de Hielo",
+      "description": "Tu Voz es invierno helado, congelando y dañando a tus enemigos",
+      "words": [
+        {
+          "word": "Fo",
+          "translation": "Escarcha",
+          "location": "Palabra del Dragón en Skyborn Altar"
+        },
+        {
+          "word": "Krah",
+          "translation": "Frío",
+          "location": "Palabra del Dragón en Driftshade Refuge"
+        },
+        {
+          "word": "Diin",
+          "translation": "Congelar",
+          "location": "Palabra del Dragón en Northwind Summit"
+        }
+      ],
+      "cooldown": "30/25/20s"
+    },
+    {
+      "id": "8",
+      "name": "Despejar Cielos",
+      "description": "Tu Voz despeja el cielo, disipando la niebla y las tormentas",
+      "words": [
+        {
+          "word": "Lok",
+          "translation": "Cielo",
+          "location": "Alto Hrothgar (Greybeards)"
+        },
+        {
+          "word": "Vah",
+          "translation": "Primavera",
+          "location": "Palabra del Dragón en Ancient's Ascent"
+        },
+        {
+          "word": "Koor",
+          "translation": "Verano",
+          "location": "Palabra del Dragón en Storm Peak Ruins"
+        }
+      ],
+      "cooldown": "10/15/20s"
+    },
+    {
+      "id": "9",
+      "name": "Ralentizar Tiempo",
+      "description": "Tu Voz manipula el flujo del tiempo, ralentizando todo excepto a ti",
+      "words": [
+        {
+          "word": "Tiid",
+          "translation": "Tiempo",
+          "location": "Palabra del Dragón en Korvanjund"
+        },
+        {
+          "word": "Klo",
+          "translation": "Arena",
+          "location": "Palabra del Dragón en Labyrinthian"
+        },
+        {
+          "word": "Ul",
+          "translation": "Eternidad",
+          "location": "Palabra del Dragón en Hag's End"
+        }
+      ],
+      "cooldown": "30/45/60s"
+    },
+    {
+      "id": "10",
+      "name": "Forma Etérea",
+      "description": "Tu Voz alcanza el reino de los espíritus, volviéndote intangible",
+      "words": [
+        {
+          "word": "Feim",
+          "translation": "Desvanecer",
+          "location": "Palabra del Dragón en Ustengrav"
+        },
+        {
+          "word": "Zii",
+          "translation": "Espíritu",
+          "location": "Palabra del Dragón en Lost Valley Redoubt"
+        },
+        {
+          "word": "Gron",
+          "translation": "Vincular",
+          "location": "Palabra del Dragón en Ironbind Barrow"
+        }
+      ],
+      "cooldown": "30/40/50s"
+    },
+    {
+      "id": "11",
+      "name": "Desgarrar Alma",
+      "description": "Tu Voz alcanza el alma de los muertos, resucitándolos para luchar a tu lado",
+      "words": [
+        {
+          "word": "Zul",
+          "translation": "Voz",
+          "location": "Palabra del Dragón en Northwind Summit"
+        },
+        {
+          "word": "Mey",
+          "translation": "Mortal",
+          "location": "Palabra del Dragón en Rannveig's Fast"
+        },
+        {
+          "word": "Gut",
+          "translation": "Lejos",
+          "location": "Palabra del Dragón en Shalidor's Maze"
+        }
+      ],
+      "cooldown": "30/40/50s"
+    },
+    {
+      "id": "12",
+      "name": "Invocar Aliado",
+      "description": "Tu Voz invoca un héroe antiguo desde Sovngarde para luchar a tu lado",
+      "words": [
+        {
+          "word": "Hun",
+          "translation": "Héroe",
+          "location": "Palabra del Dragón en Twilight Sepulcher"
+        },
+        {
+          "word": "Kaal",
+          "translation": "Campeón",
+          "location": "Palabra del Dragón en Dead Men's Respite"
+        },
+        {
+          "word": "Zoor",
+          "translation": "Leyenda",
+          "location": "Palabra del Dragón en Folgunthur"
+        }
+      ],
+      "cooldown": "180/300/600s"
+    },
+    {
+      "id": "13",
+      "name": "Aliento de Veneno",
+      "description": "Tu Voz es veneno mortal, dañando la salud y el vigor de tus enemigos",
+      "words": [
+        {
+          "word": "Krii",
+          "translation": "Matar",
+          "location": "Palabra del Dragón en Eldersblood Peak"
+        },
+        {
+          "word": "Lun",
+          "translation": "Sangrar",
+          "location": "Palabra del Dragón en Autumnwatch Tower"
+        },
+        {
+          "word": "Aus",
+          "translation": "Sufrir",
+          "location": "Palabra del Dragón en Dark Brotherhood Sanctuary"
+        }
+      ],
+      "cooldown": "30/25/20s"
+    },
+    {
+      "id": "14",
+      "name": "Grito de Animales",
+      "description": "Tu Voz llama a las bestias salvajes para que acudan en tu ayuda",
+      "words": [
+        {
+          "word": "Raan",
+          "translation": "Animal",
+          "location": "Palabra del Dragón en Ancient's Ascent"
+        },
+        {
+          "word": "Mir",
+          "translation": "Lealtad",
+          "location": "Palabra del Dragón en Riften"
+        },
+        {
+          "word": "Tah",
+          "translation": "Empatía",
+          "location": "Palabra del Dragón en Angarvunde"
+        }
+      ],
+      "cooldown": "40/50/60s"
+    },
+    {
+      "id": "15",
+      "name": "Desarmado",
+      "description": "Tu Voz desarma a tu oponente, haciendo que suelte su arma",
+      "words": [
+        {
+          "word": "Zun",
+          "translation": "Arma",
+          "location": "Palabra del Dragón en Eldersblood Peak"
+        },
+        {
+          "word": "Haal",
+          "translation": "Mano",
+          "location": "Palabra del Dragón en Snow Veil Sanctum"
+        },
+        {
+          "word": "Viik",
+          "translation": "Derrotar",
+          "location": "Palabra del Dragón en Silverdrift Lair"
+        }
+      ],
+      "cooldown": "30/35/40s"
+    },
+    {
+      "id": "16",
+      "name": "Doblegar Voluntad",
+      "description": "Tu Voz somete la voluntad de dragones, permitiéndote montarlos",
+      "words": [
+        {
+          "word": "Gol",
+          "translation": "Tierra",
+          "location": "Saering's Watch (Solstheim)",
+          "isDLC": true,
+          "dlcName": "Dragonborn"
+        },
+        {
+          "word": "Hah",
+          "translation": "Mente",
+          "location": "Temple of Miraak (Solstheim)",
+          "isDLC": true,
+          "dlcName": "Dragonborn"
+        },
+        {
+          "word": "Dov",
+          "translation": "Dragón",
+          "location": "Completar 'El Camino del Conocimiento'",
+          "isDLC": true,
+          "dlcName": "Dragonborn"
+        }
+      ],
+      "cooldown": "300s"
+    },
+    {
+      "id": "17",
+      "name": "Ciclón",
+      "description": "Tu Voz conjura un ciclón que absorbe y daña a tus enemigos",
+      "words": [
+        {
+          "word": "Ven",
+          "translation": "Viento",
+          "location": "Templo de Miraak (Solstheim)",
+          "isDLC": true,
+          "dlcName": "Dragonborn"
+        },
+        {
+          "word": "Gaar",
+          "translation": "Desatar",
+          "location": "Bloodskal Barrow (Solstheim)",
+          "isDLC": true,
+          "dlcName": "Dragonborn"
+        },
+        {
+          "word": "Nos",
+          "translation": "Golpear",
+          "location": "White Ridge Barrow (Solstheim)",
+          "isDLC": true,
+          "dlcName": "Dragonborn"
+        }
+      ],
+      "cooldown": "30/45/60s"
+    },
+    {
+      "id": "18",
+      "name": "Aliento de Dragón",
+      "description": "Tu Voz inflige un daño devastador a tus enemigos",
+      "words": [
+        {
+          "word": "Diiv",
+          "translation": "Wyrm",
+          "location": "Templo de Miraak (Solstheim)",
+          "isDLC": true,
+          "dlcName": "Dragonborn"
+        },
+        {
+          "word": "Bal",
+          "translation": "Poder",
+          "location": "Completar 'A la Luz del Día'",
+          "isDLC": true,
+          "dlcName": "Dragonborn"
+        },
+        {
+          "word": "Lok",
+          "translation": "Cielo",
+          "location": "Derrotar a Miraak",
+          "isDLC": true,
+          "dlcName": "Dragonborn"
+        }
+      ],
+      "cooldown": "120s"
+    },
+    {
+      "id": "19",
+      "name": "Intimidación",
+      "description": "Tu Voz infunde miedo en el corazón de los mortales",
+      "words": [
+        {
+          "word": "Faas",
+          "translation": "Miedo",
+          "location": "Dead Crone Rock"
+        },
+        {
+          "word": "Ru",
+          "translation": "Correr",
+          "location": "Palabra del Dragón en Sunderstone Gorge"
+        },
+        {
+          "word": "Maar",
+          "translation": "Terror",
+          "location": "Palabra del Dragón en Labyrinthian"
+        }
+      ],
+      "cooldown": "30/40/50s"
+    },
+    {
+      "id": "20",
+      "name": "Susurros Mortales",
+      "description": "Tu Voz proyecta una ilusión que distrae a los enemigos",
+      "words": [
+        {
+          "word": "Zul",
+          "translation": "Voz",
+          "location": "Volunruud"
+        },
+        {
+          "word": "Mey",
+          "translation": "Mortal",
+          "location": "Palabra del Dragón en Shalidor's Maze"
+        },
+        {
+          "word": "Gut",
+          "translation": "Lejos",
+          "location": "Palabra del Dragón en Labyrinthian"
+        }
+      ],
+      "cooldown": "30/35/40s"
+    }
+  ]
+}

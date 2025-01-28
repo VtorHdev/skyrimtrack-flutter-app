@@ -8,7 +8,8 @@ enum TrackedItem {
   daedricQuests('daedric_quests_completed'),
   companionsQuests('companions_quests_completed'),
   civilWarQuests('civil_war_quests_completed'),
-  houses('houses_acquired');
+  houses('houses_acquired'),
+  shouts('shouts_words_learned');
 
   final String key;
   const TrackedItem(this.key);

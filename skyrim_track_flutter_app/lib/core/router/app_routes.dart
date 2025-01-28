@@ -34,6 +34,11 @@ class AppRoutes {
     path: '/quests',
   );
 
+  static const shouts = RouteData(
+    name: 'shouts',
+    path: '/shouts',
+  );
+
   // Agrupamos las rutas de misiones
   static final quests = _QuestRoutes();
 }

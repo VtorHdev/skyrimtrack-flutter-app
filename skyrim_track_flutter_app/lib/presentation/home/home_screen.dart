@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: ListView.separated(
         padding: const EdgeInsets.symmetric(vertical: 16),
-        itemCount: 4,
+        itemCount: 5,
         separatorBuilder: (context, index) => Divider(
           height: 1,
           color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
@@ -43,6 +43,12 @@ class HomeScreen extends StatelessWidget {
                 title: 'Casas',
                 icon: Icons.home,
                 onTap: () => context.pushNamed(AppRoutes.houses.name),
+              );
+            case 4:
+              return _FeatureCard(
+                title: 'Gritos',
+                icon: Icons.record_voice_over,
+                onTap: () => context.pushNamed(AppRoutes.shouts.name),
               );
             default:
               return const SizedBox.shrink();

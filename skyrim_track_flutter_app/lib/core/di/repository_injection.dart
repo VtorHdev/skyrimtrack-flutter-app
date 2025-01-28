@@ -1,7 +1,10 @@
 import 'package:get_it/get_it.dart';
 import 'package:skyrim_completionist_app/data/datasources/local/houses_local_datasource.dart';
+import 'package:skyrim_completionist_app/data/datasources/local/shouts_local_datasource.dart';
 import 'package:skyrim_completionist_app/data/repositories/houses_repository_impl.dart';
+import 'package:skyrim_completionist_app/data/repositories/shouts_repository_impl.dart';
 import 'package:skyrim_completionist_app/domain/repositories/houses_repository.dart';
+import 'package:skyrim_completionist_app/domain/repositories/shouts_repository.dart';
 import '/data/repositories/enchantments_repository_impl.dart';
 import '/data/repositories/skill_books_repository_impl.dart';
 import '/data/repositories/quests_repository_impl.dart';
@@ -33,6 +36,10 @@ class RepositoryInjection {
 
     getIt.registerLazySingleton<HousesRepository>(
       () => HousesRepositoryImpl(getIt<HousesLocalDatasource>()),
+    );
+
+    getIt.registerLazySingleton<ShoutsRepository>(
+      () => ShoutsRepositoryImpl(getIt<ShoutsLocalDatasource>()),
     );
   }
 }

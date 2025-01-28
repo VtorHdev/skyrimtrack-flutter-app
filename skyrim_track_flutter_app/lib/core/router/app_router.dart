@@ -18,6 +18,9 @@ import 'package:get_it/get_it.dart';
 import '/presentation/houses/houses_screen.dart';
 import '/presentation/houses/cubit/houses_cubit.dart';
 import '/domain/repositories/houses_repository.dart';
+import '/presentation/shouts/shouts_screen.dart';
+import '/presentation/shouts/cubit/shouts_cubit.dart';
+import '/domain/repositories/shouts_repository.dart';
 
 final navigationKey = GlobalKey<NavigatorState>();
 
@@ -67,6 +70,14 @@ final appRouter = GoRouter(
       builder: (_, __) => BlocProvider(
         create: (_) => HousesCubit(GetIt.I<HousesRepository>()),
         child: const HousesScreen(),
+      ),
+    ),
+    GoRoute(
+      path: AppRoutes.shouts.path,
+      name: AppRoutes.shouts.name,
+      builder: (_, __) => BlocProvider(
+        create: (_) => ShoutsCubit(GetIt.I<ShoutsRepository>()),
+        child: const ShoutsScreen(),
       ),
     ),
   ],
