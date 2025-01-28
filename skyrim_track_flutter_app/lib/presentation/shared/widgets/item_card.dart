@@ -25,7 +25,7 @@ class ItemCard extends StatelessWidget {
 
     return Material(
       color: isMarked
-          ? colorScheme.primaryContainer.withOpacity(0.1)
+          ? colorScheme.primaryContainer.withValues(alpha: 0.1)
           : Colors.transparent,
       child: InkWell(
         onTap: isEnabled ? onTap : null,
@@ -56,8 +56,8 @@ class ItemCard extends StatelessWidget {
                         style: textTheme.bodySmall?.copyWith(
                           height: 1.2,
                           color: isMarked
-                              ? colorScheme.onSurface.withOpacity(0.8)
-                              : colorScheme.onSurface.withOpacity(0.6),
+                              ? colorScheme.onSurface.withValues(alpha: 0.8)
+                              : colorScheme.onSurface.withValues(alpha: 0.6),
                         ),
                       ),
                       if (subtitle != null) ...[
@@ -67,8 +67,8 @@ class ItemCard extends StatelessWidget {
                           style: textTheme.bodySmall?.copyWith(
                             height: 1.2,
                             color: isMarked
-                                ? colorScheme.onSurface.withOpacity(0.8)
-                                : colorScheme.onSurface.withOpacity(0.6),
+                                ? colorScheme.onSurface.withValues(alpha: 0.8)
+                                : colorScheme.onSurface.withValues(alpha: 0.6),
                           ),
                         ),
                       ],
@@ -84,7 +84,7 @@ class ItemCard extends StatelessWidget {
                       : Icons.lock_outline,
                   color: isMarked
                       ? colorScheme.primary
-                      : colorScheme.onSurfaceVariant.withOpacity(0.5),
+                      : colorScheme.onSurfaceVariant.withValues(alpha: 0.5),
                   size: 28,
                 ),
               ],

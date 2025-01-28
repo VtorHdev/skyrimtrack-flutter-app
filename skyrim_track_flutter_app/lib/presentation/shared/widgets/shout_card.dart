@@ -18,7 +18,7 @@ class ShoutCard extends StatelessWidget {
 
     return Material(
       color: shout.wordsLearned > 0
-          ? colorScheme.primaryContainer.withOpacity(0.1)
+          ? colorScheme.primaryContainer.withValues(alpha: 0.1)
           : Colors.transparent,
       child: InkWell(
         onTap: () => onWordTap(shout.id),
@@ -51,8 +51,8 @@ class ShoutCard extends StatelessWidget {
                           style: textTheme.bodySmall?.copyWith(
                             height: 1.2,
                             color: shout.wordsLearned > 0
-                                ? colorScheme.onSurface.withOpacity(0.8)
-                                : colorScheme.onSurface.withOpacity(0.6),
+                                ? colorScheme.onSurface.withValues(alpha: 0.8)
+                                : colorScheme.onSurface.withValues(alpha: 0.6),
                           ),
                         ),
                       ],
@@ -67,14 +67,15 @@ class ShoutCard extends StatelessWidget {
                         style: textTheme.titleMedium?.copyWith(
                           color: shout.wordsLearned > 0
                               ? colorScheme.primary
-                              : colorScheme.onSurfaceVariant.withOpacity(0.5),
+                              : colorScheme.onSurfaceVariant
+                                  .withValues(alpha: 0.5),
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
                         'CD: ${shout.cooldown}',
                         style: textTheme.bodySmall?.copyWith(
-                          color: colorScheme.primary.withOpacity(0.7),
+                          color: colorScheme.primary.withValues(alpha: 0.7),
                         ),
                       ),
                     ],
@@ -120,7 +121,8 @@ class _ShoutWord extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 4),
       padding: const EdgeInsets.symmetric(vertical: 8),
-      color: isLearned ? theme.colorScheme.primary.withOpacity(0.1) : null,
+      color:
+          isLearned ? theme.colorScheme.primary.withValues(alpha: 0.1) : null,
       child: Column(
         children: [
           Text(
@@ -128,7 +130,7 @@ class _ShoutWord extends StatelessWidget {
             style: theme.textTheme.titleSmall?.copyWith(
               color: isLearned
                   ? theme.colorScheme.primary
-                  : theme.colorScheme.onSurface.withOpacity(0.7),
+                  : theme.colorScheme.onSurface.withValues(alpha: 0.7),
               fontFamily: 'Cinzel',
             ),
           ),
@@ -136,7 +138,7 @@ class _ShoutWord extends StatelessWidget {
           Text(
             word.translation,
             style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.onSurface.withOpacity(0.5),
+              color: theme.colorScheme.onSurface.withValues(alpha: 0.5),
               fontSize: 10,
             ),
           ),

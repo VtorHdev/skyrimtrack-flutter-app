@@ -42,7 +42,7 @@ class ShoutsScreen extends StatelessWidget {
                       color: Theme.of(context)
                           .colorScheme
                           .primary
-                          .withOpacity(0.2),
+                          .withValues(alpha: 0.2),
                     ),
                     itemBuilder: (context, index) => ShoutCard(
                       shout: shouts[index],
@@ -72,7 +72,7 @@ class _SearchField extends StatelessWidget {
         color: theme.colorScheme.surface,
         border: Border(
           bottom: BorderSide(
-            color: theme.colorScheme.primary.withOpacity(0.2),
+            color: theme.colorScheme.primary.withValues(alpha: 0.2),
           ),
         ),
       ),
@@ -80,7 +80,7 @@ class _SearchField extends StatelessWidget {
         children: [
           Icon(
             Icons.search,
-            color: theme.colorScheme.onSurface.withOpacity(0.7),
+            color: theme.colorScheme.onSurface.withValues(alpha: 0.7),
             size: 20,
           ),
           const SizedBox(width: 12),
@@ -90,7 +90,7 @@ class _SearchField extends StatelessWidget {
               decoration: InputDecoration(
                 hintText: 'Buscar gritos...',
                 hintStyle: theme.textTheme.bodyMedium?.copyWith(
-                  color: theme.colorScheme.onSurface.withOpacity(0.5),
+                  color: theme.colorScheme.onSurface.withValues(alpha: 0.5),
                 ),
                 border: InputBorder.none,
                 isDense: true,

@@ -6,7 +6,6 @@ class AppTheme {
         colorScheme: ColorScheme.dark(
           primary: Colors.grey[400]!,
           secondary: Colors.grey[500]!,
-          background: Colors.grey[900]!,
           surface: Colors.black87,
           onSurface: Colors.grey[300]!,
         ),
@@ -60,11 +59,11 @@ class AppTheme {
           color: Colors.grey[400],
         ),
         searchBarTheme: SearchBarThemeData(
-          backgroundColor: MaterialStateProperty.all(Colors.grey[850]),
-          textStyle: MaterialStateProperty.all(
+          backgroundColor: WidgetStateProperty.all(Colors.grey[850]),
+          textStyle: WidgetStateProperty.all(
             TextStyle(color: Colors.grey[300]),
           ),
-          hintStyle: MaterialStateProperty.all(
+          hintStyle: WidgetStateProperty.all(
             TextStyle(color: Colors.grey[600]),
           ),
         ),

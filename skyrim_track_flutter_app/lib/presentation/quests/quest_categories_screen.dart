@@ -54,7 +54,7 @@ class QuestCategoriesScreen extends StatelessWidget {
         itemCount: _categories.length,
         separatorBuilder: (context, index) => Divider(
           height: 1,
-          color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+          color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.2),
         ),
         itemBuilder: (context, index) {
           final category = _categories[index];

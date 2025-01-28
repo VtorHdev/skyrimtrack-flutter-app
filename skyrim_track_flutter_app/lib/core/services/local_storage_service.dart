@@ -46,4 +46,8 @@ class LocalStorageService {
 
     await _box.put(item.key, [jsonEncode(wordsLearned)]);
   }
+
+  Future<void> clearAll() async {
+    await _box.clear();
+  }
 }
