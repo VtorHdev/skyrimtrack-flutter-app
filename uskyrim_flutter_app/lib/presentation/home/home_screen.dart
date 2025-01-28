@@ -13,6 +13,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('uSkyrim'),
+        centerTitle: true,
       ),
       body: SafeArea(
         child: Column(
