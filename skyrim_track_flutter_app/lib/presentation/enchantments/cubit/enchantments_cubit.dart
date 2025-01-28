@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:skyrim_completionist_app/domain/enums/enchantment_sort.dart';
+import 'package:uskyrim/domain/enums/enchantment_sort.dart';
 import '/domain/entities/enchantment.dart';
 import '/domain/repositories/enchantments_repository.dart';
 import 'enchantments_state.dart';

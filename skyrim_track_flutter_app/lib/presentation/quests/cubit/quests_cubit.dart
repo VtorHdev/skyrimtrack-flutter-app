@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:skyrim_completionist_app/domain/entities/quest.dart';
+import 'package:uskyrim/domain/entities/quest.dart';
 import '/domain/enums/quest_type.dart';
 import '/domain/enums/quest_sort.dart';
 import '/domain/repositories/quests_repository.dart';
