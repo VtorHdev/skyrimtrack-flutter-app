@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Skyrim Tracker'),
+        title: const Text('uSkyrim'),
       ),
       body: SafeArea(
         child: Column(
