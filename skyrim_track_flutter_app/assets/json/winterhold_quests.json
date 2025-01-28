@@ -1,0 +1,84 @@
+{
+  "quests": [
+    {
+      "id": "1",
+      "name": "Primera Lección",
+      "description": "Demuestra tu magia para entrar al Colegio",
+      "location": "Winterhold",
+      "prerequisite": "Ninguno",
+      "faction": "iniciación"
+    },
+    {
+      "id": "2",
+      "name": "Bajo Saarthal",
+      "description": "Explora las ruinas de Saarthal",
+      "location": "Saarthal",
+      "prerequisite": "Primera Lección",
+      "faction": "principal"
+    },
+    {
+      "id": "3",
+      "name": "Golpeando los Libros",
+      "description": "Busca información sobre el hallazgo",
+      "location": "Arcaneum",
+      "prerequisite": "Bajo Saarthal",
+      "faction": "principal"
+    },
+    {
+      "id": "4",
+      "name": "Buenos Intentos",
+      "description": "Busca al Augur de Dunlain",
+      "location": "Colegio de Winterhold",
+      "prerequisite": "Golpeando los Libros",
+      "faction": "principal"
+    },
+    {
+      "id": "5",
+      "name": "Revelación",
+      "description": "Encuentra el Bastón de Magnus",
+      "location": "Labyrinthian",
+      "prerequisite": "Buenos Intentos",
+      "faction": "principal"
+    },
+    {
+      "id": "6",
+      "name": "Contención",
+      "description": "Enfrenta a Ancano",
+      "location": "Colegio de Winterhold",
+      "prerequisite": "Revelación",
+      "faction": "principal"
+    },
+    {
+      "id": "7",
+      "name": "El Ojo de Magnus",
+      "description": "Derrota a Ancano",
+      "location": "Colegio de Winterhold",
+      "prerequisite": "Contención",
+      "faction": "principal"
+    },
+    {
+      "id": "8",
+      "name": "Rituales de Conjuración",
+      "description": "Aprende conjuración avanzada",
+      "location": "Colegio de Winterhold",
+      "prerequisite": "El Ojo de Magnus",
+      "faction": "radial"
+    },
+    {
+      "id": "9",
+      "name": "Rituales de Destrucción",
+      "description": "Aprende destrucción avanzada",
+      "location": "Colegio de Winterhold",
+      "prerequisite": "El Ojo de Magnus",
+      "faction": "radial"
+    },
+    {
+      "id": "10",
+      "name": "Rituales de Restauración",
+      "description": "Aprende restauración avanzada",
+      "location": "Colegio de Winterhold",
+      "prerequisite": "El Ojo de Magnus",
+      "faction": "radial"
+    }
+  ]
+}

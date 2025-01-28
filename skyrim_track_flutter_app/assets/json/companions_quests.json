@@ -1,0 +1,84 @@
+{
+  "quests": [
+    {
+      "id": "1",
+      "name": "Toma las Armas",
+      "description": "Demuestra tu valía a los Companions",
+      "location": "Jorrvaskr",
+      "prerequisite": "Ninguno",
+      "faction": "iniciación"
+    },
+    {
+      "id": "2",
+      "name": "Problemas en Skyrim",
+      "description": "Completa trabajos para los Companions",
+      "location": "Varios lugares",
+      "prerequisite": "Toma las Armas",
+      "faction": "iniciación"
+    },
+    {
+      "id": "3",
+      "name": "Prueba de Honor",
+      "description": "Recupera un fragmento de Wuuthrad",
+      "location": "Dustman's Cairn",
+      "prerequisite": "Problemas en Skyrim",
+      "faction": "círculo"
+    },
+    {
+      "id": "4",
+      "name": "El Ritual",
+      "description": "Conviértete en un hombre lobo",
+      "location": "Sala Inferior",
+      "prerequisite": "Prueba de Honor",
+      "faction": "círculo"
+    },
+    {
+      "id": "5",
+      "name": "Sangre de Plata",
+      "description": "Elimina a la Mano de Plata de Gallows Rock",
+      "location": "Gallows Rock",
+      "prerequisite": "El Ritual",
+      "faction": "círculo"
+    },
+    {
+      "id": "6",
+      "name": "Pena y Venganza",
+      "description": "Venga la muerte de Kodlak",
+      "location": "Jorrvaskr",
+      "prerequisite": "Sangre de Plata",
+      "faction": "principal"
+    },
+    {
+      "id": "7",
+      "name": "Gloria de los Muertos",
+      "description": "Honra a Kodlak en la Forja Skyforge",
+      "location": "Whiterun",
+      "prerequisite": "Pena y Venganza",
+      "faction": "principal"
+    },
+    {
+      "id": "8",
+      "name": "Pureza de Venganza",
+      "description": "Limpia el espíritu de Kodlak",
+      "location": "Tumba de Ysgramor",
+      "prerequisite": "Gloria de los Muertos",
+      "faction": "principal"
+    },
+    {
+      "id": "9",
+      "name": "Dragón Creciente",
+      "description": "Completa misiones radiales para los Companions",
+      "location": "Varios lugares",
+      "prerequisite": "Pureza de Venganza",
+      "faction": "radial"
+    },
+    {
+      "id": "10",
+      "name": "Animal Salvaje",
+      "description": "Ayuda a un Companion a controlar su forma bestial",
+      "location": "Varios lugares",
+      "prerequisite": "El Ritual",
+      "faction": "radial"
+    }
+  ]
+}

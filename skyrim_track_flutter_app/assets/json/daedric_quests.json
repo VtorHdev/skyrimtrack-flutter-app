@@ -1,0 +1,84 @@
+{
+  "quests": [
+    {
+      "id": "1",
+      "name": "La Estrella Negra",
+      "description": "Ayuda a Azura a purificar su estrella",
+      "location": "Santuario de Azura",
+      "prerequisite": "Nivel 2",
+      "faction": "azura"
+    },
+    {
+      "id": "2",
+      "name": "El Perro de Clavicus",
+      "description": "Ayuda a Barbas a reunirse con Clavicus Vile",
+      "location": "Falkreath",
+      "prerequisite": "Nivel 10",
+      "faction": "clavicus"
+    },
+    {
+      "id": "3",
+      "name": "El Bastón de la Corrupción",
+      "description": "Limpia el bastón de Peryite",
+      "location": "Ruinas Dwemer",
+      "prerequisite": "Nivel 10",
+      "faction": "peryite"
+    },
+    {
+      "id": "4",
+      "name": "El Sabor de la Muerte",
+      "description": "Ayuda a Namira y sus caníbales",
+      "location": "Markarth",
+      "prerequisite": "Nivel 10",
+      "faction": "namira"
+    },
+    {
+      "id": "5",
+      "name": "Un Festín para Boethiah",
+      "description": "Realiza un sacrificio para Boethiah",
+      "location": "Santuario de Boethiah",
+      "prerequisite": "Nivel 30",
+      "faction": "boethiah"
+    },
+    {
+      "id": "6",
+      "name": "La Casa del Horror",
+      "description": "Escapa de la casa embrujada de Molag Bal",
+      "location": "Markarth",
+      "prerequisite": "Nivel 10",
+      "faction": "molag"
+    },
+    {
+      "id": "7",
+      "name": "El Crepúsculo Interminable",
+      "description": "Recupera el Bastón de Vaermina",
+      "location": "Dawnstar",
+      "prerequisite": "Nivel 10",
+      "faction": "vaermina"
+    },
+    {
+      "id": "8",
+      "name": "La Única Cura",
+      "description": "Forja la Espada del Alba para Meridia",
+      "location": "Monte Kilkreath",
+      "prerequisite": "Nivel 12",
+      "faction": "meridia"
+    },
+    {
+      "id": "9",
+      "name": "El Camino de la Locura",
+      "description": "Ayuda a Sheogorath en la mente del Emperador Pelagius",
+      "location": "Solitude",
+      "prerequisite": "Ninguno",
+      "faction": "sheogorath"
+    },
+    {
+      "id": "10",
+      "name": "Ebony Blade",
+      "description": "Obtén y potencia la Ebony Blade de Mephala",
+      "location": "Whiterun",
+      "prerequisite": "Nivel 20",
+      "faction": "mephala"
+    }
+  ]
+}

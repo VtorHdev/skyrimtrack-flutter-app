@@ -1,0 +1,84 @@
+{
+  "quests": [
+    {
+      "id": "1",
+      "name": "Inocencia Perdida",
+      "description": "Mata a Grelod la Bondadosa",
+      "location": "Orfanato de Riften",
+      "prerequisite": "Ninguno",
+      "faction": "iniciación"
+    },
+    {
+      "id": "2",
+      "name": "Con Amigos Así...",
+      "description": "Escapa de la cabaña abandonada",
+      "location": "Cabaña Abandonada",
+      "prerequisite": "Inocencia Perdida",
+      "faction": "iniciación"
+    },
+    {
+      "id": "3",
+      "name": "Santificado",
+      "description": "Únete a la Hermandad Oscura",
+      "location": "Santuario",
+      "prerequisite": "Con Amigos Así...",
+      "faction": "principal"
+    },
+    {
+      "id": "4",
+      "name": "Susurros en la Oscuridad",
+      "description": "Habla con la Madre Noche",
+      "location": "Santuario",
+      "prerequisite": "Santificado",
+      "faction": "principal"
+    },
+    {
+      "id": "5",
+      "name": "Silencio Sepulcral",
+      "description": "Mata a Cicero o déjalo vivir",
+      "location": "Santuario de Dawnstar",
+      "prerequisite": "Susurros en la Oscuridad",
+      "faction": "principal"
+    },
+    {
+      "id": "6",
+      "name": "Receta para el Desastre",
+      "description": "Infiltrate como el chef del Emperador",
+      "location": "Markarth",
+      "prerequisite": "Silencio Sepulcral",
+      "faction": "principal"
+    },
+    {
+      "id": "7",
+      "name": "La Cura para la Locura",
+      "description": "Mata al Emperador falso",
+      "location": "Solitude",
+      "prerequisite": "Receta para el Desastre",
+      "faction": "principal"
+    },
+    {
+      "id": "8",
+      "name": "Muerte Encarnada",
+      "description": "Asesina al Emperador verdadero",
+      "location": "Katariah",
+      "prerequisite": "La Cura para la Locura",
+      "faction": "principal"
+    },
+    {
+      "id": "9",
+      "name": "Honor y Sangre",
+      "description": "Completa contratos secundarios",
+      "location": "Varios lugares",
+      "prerequisite": "Santificado",
+      "faction": "radial"
+    },
+    {
+      "id": "10",
+      "name": "Donde Yace la Lealtad",
+      "description": "Elimina al traidor de la Hermandad",
+      "location": "Varios lugares",
+      "prerequisite": "Muerte Encarnada",
+      "faction": "radial"
+    }
+  ]
+}

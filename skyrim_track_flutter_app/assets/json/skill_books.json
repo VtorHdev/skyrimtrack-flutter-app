@@ -1,0 +1,544 @@
+{
+  "skill_books": [
+    {
+      "id": "1",
+      "name": "Batalla de Rojo Monte",
+      "skill": "Armadura Pesada",
+      "location": "Fuerte Kastav - En una mesa"
+    },
+    {
+      "id": "2",
+      "name": "2920, MidYear, v6",
+      "skill": "Armadura Pesada",
+      "location": "Cueva Sombría - En un estante"
+    },
+    {
+      "id": "3",
+      "name": "Hallazgos de Péndulo",
+      "skill": "Armadura Pesada",
+      "location": "Cuevas Glaciales - Sobre un cadáver"
+    },
+    {
+      "id": "4",
+      "name": "Los Caballeros de los Nueve",
+      "skill": "Armadura Pesada",
+      "location": "Templo de los Divinos, Soledad"
+    },
+    {
+      "id": "5",
+      "name": "La Armadura del Salvaje",
+      "skill": "Armadura Pesada",
+      "location": "Tumba de Ysgramor - Sala principal"
+    },
+    {
+      "id": "6",
+      "name": "El Herrero Inmortal",
+      "skill": "Herrería",
+      "location": "Herrería Caliente, Carrera Blanca"
+    },
+    {
+      "id": "7",
+      "name": "El Último Escudo de los Centinelas",
+      "skill": "Herrería",
+      "location": "Mina de Gloombound"
+    },
+    {
+      "id": "8",
+      "name": "Pesada Armadura de los Antiguos",
+      "skill": "Herrería",
+      "location": "Alquimista Blanco, Morthal"
+    },
+    {
+      "id": "9",
+      "name": "El Arte Perdido del Herrero",
+      "skill": "Herrería",
+      "location": "Herrería de Lakeview Manor"
+    },
+    {
+      "id": "10",
+      "name": "Los Herreros de Soledad",
+      "skill": "Herrería",
+      "location": "Herrería de Beirand, Soledad"
+    },
+    {
+      "id": "11",
+      "name": "Danza en el Fuego, v7",
+      "skill": "Destrucción",
+      "location": "Cuevas Heladas - Sala del trono"
+    },
+    {
+      "id": "12",
+      "name": "Horror de Castillo Chorrol",
+      "skill": "Destrucción",
+      "location": "Saqueador del Páramo - Campamento"
+    },
+    {
+      "id": "13",
+      "name": "Misterio de Talara, v3",
+      "skill": "Destrucción",
+      "location": "Torre del Mago - Biblioteca"
+    },
+    {
+      "id": "14",
+      "name": "El Arte de la Guerra Mágica",
+      "skill": "Destrucción",
+      "location": "Colegio de Hibernalia - Arcanaeum"
+    },
+    {
+      "id": "15",
+      "name": "Respuesta de los Elementos",
+      "skill": "Destrucción",
+      "location": "Cueva del Brujo - Altar"
+    },
+    {
+      "id": "16",
+      "name": "Antes de la Era de los Hombres",
+      "skill": "Alteración",
+      "location": "Ruinas de Mzulft - Sala de estudio"
+    },
+    {
+      "id": "17",
+      "name": "Realidad y Otros Falsos",
+      "skill": "Alteración",
+      "location": "Pico Alto - Torre del hechicero"
+    },
+    {
+      "id": "18",
+      "name": "Los Viejos Caminos",
+      "skill": "Alteración",
+      "location": "Túmulo de Ustengrav"
+    },
+    {
+      "id": "19",
+      "name": "Hijos del Cielo",
+      "skill": "Alteración",
+      "location": "Templo de Kynareth, Carrera Blanca"
+    },
+    {
+      "id": "20",
+      "name": "Los Lunares de la Luna",
+      "skill": "Alteración",
+      "location": "Cueva del Eco - Cámara principal"
+    },
+    {
+      "id": "21",
+      "name": "Conjuración Básica",
+      "skill": "Conjuración",
+      "location": "Colegio de Hibernalia - Sala de Conjuración"
+    },
+    {
+      "id": "22",
+      "name": "El Libro de los Daedra",
+      "skill": "Conjuración",
+      "location": "Fuerte Amol - Biblioteca"
+    },
+    {
+      "id": "23",
+      "name": "Liminal Bridges",
+      "skill": "Conjuración",
+      "location": "Cueva del Brujo Muerto - Altar"
+    },
+    {
+      "id": "24",
+      "name": "El Guerrero Espiritual",
+      "skill": "Conjuración",
+      "location": "Sagrario de Mehrunes Dagon"
+    },
+    {
+      "id": "25",
+      "name": "2920, Sol del Amanecer",
+      "skill": "Conjuración",
+      "location": "Torre Caída - Habitación superior"
+    },
+    {
+      "id": "26",
+      "name": "Alquimia Avanzada",
+      "skill": "Alquimia",
+      "location": "Botica de Arcadia, Carrera Blanca"
+    },
+    {
+      "id": "27",
+      "name": "Herbario del Brujo",
+      "skill": "Alquimia",
+      "location": "Cueva del Alquimista - Mesa de trabajo"
+    },
+    {
+      "id": "28",
+      "name": "Canción del Fabricante",
+      "skill": "Alquimia",
+      "location": "Laboratorio de Sinderion, Blackreach"
+    },
+    {
+      "id": "29",
+      "name": "De la Peste a la Cura",
+      "skill": "Alquimia",
+      "location": "Torre del Mago - Laboratorio"
+    },
+    {
+      "id": "30",
+      "name": "Manannan's Practice",
+      "skill": "Alquimia",
+      "location": "Cuevas Heladas - Laboratorio secreto"
+    },
+    {
+      "id": "31",
+      "name": "Guía del Ladrón",
+      "skill": "Sigilo",
+      "location": "Ratway, Riften - Escondite"
+    },
+    {
+      "id": "32",
+      "name": "Tres Ladrones",
+      "skill": "Sigilo",
+      "location": "Gremio de Ladrones, Riften"
+    },
+    {
+      "id": "33",
+      "name": "2920, Última Semilla",
+      "skill": "Sigilo",
+      "location": "Santuario Oscuro - Biblioteca"
+    },
+    {
+      "id": "34",
+      "name": "Leyenda de Krately House",
+      "skill": "Sigilo",
+      "location": "Cueva del Bandido - Cofre oculto"
+    },
+    {
+      "id": "35",
+      "name": "Fuego y Oscuridad",
+      "skill": "Sigilo",
+      "location": "Castillo Dour - Habitación secreta"
+    },
+    {
+      "id": "36",
+      "name": "El Arte del Combate",
+      "skill": "Armas a Una Mano",
+      "location": "Jorrvaskr - Sala de entrenamiento"
+    },
+    {
+      "id": "37",
+      "name": "Fuego y Fe",
+      "skill": "Armas a Una Mano",
+      "location": "Templo de Meridia"
+    },
+    {
+      "id": "38",
+      "name": "Guerreros de Sangre",
+      "skill": "Armas a Una Mano",
+      "location": "Cueva del Oso - Junto al cadáver"
+    },
+    {
+      "id": "39",
+      "name": "La Importancia del Lugar",
+      "skill": "Armas a Una Mano",
+      "location": "Fuerte de la Guardia del Alba"
+    },
+    {
+      "id": "40",
+      "name": "Noche de Lágrimas",
+      "skill": "Armas a Una Mano",
+      "location": "Tumba del Rey Olaf"
+    },
+    {
+      "id": "41",
+      "name": "Palabras y Filosofía",
+      "skill": "Elocuencia",
+      "location": "Posada Espino de Plata, Riften"
+    },
+    {
+      "id": "42",
+      "name": "Biografía de la Reina Barenziah",
+      "skill": "Elocuencia",
+      "location": "Palacio Azul, Ventalia"
+    },
+    {
+      "id": "43",
+      "name": "2920, Segunda Semilla",
+      "skill": "Elocuencia",
+      "location": "Biblioteca de Hibernalia"
+    },
+    {
+      "id": "44",
+      "name": "El Misterio de Talara, v4",
+      "skill": "Elocuencia",
+      "location": "Palacio del Rey, Soledad"
+    },
+    {
+      "id": "45",
+      "name": "La Cuenta Final",
+      "skill": "Elocuencia",
+      "location": "Casa de Belethor, Carrera Blanca"
+    },
+    {
+      "id": "46",
+      "name": "El Libro de los Círculos",
+      "skill": "Bloqueo",
+      "location": "Cuartel Imperial, Soledad"
+    },
+    {
+      "id": "47",
+      "name": "Muerte Golpeante",
+      "skill": "Bloqueo",
+      "location": "Fuerte Escudo Gris"
+    },
+    {
+      "id": "48",
+      "name": "La Batalla de Rojo Monte",
+      "skill": "Bloqueo",
+      "location": "Campamento Stormcloak"
+    },
+    {
+      "id": "49",
+      "name": "Guerrero",
+      "skill": "Bloqueo",
+      "location": "Sala de los Muertos, Carrera Blanca"
+    },
+    {
+      "id": "50",
+      "name": "Un Baile en el Fuego",
+      "skill": "Bloqueo",
+      "location": "Cueva del Troll - Sala del tesoro"
+    },
+    {
+      "id": "51",
+      "name": "El Espejo",
+      "skill": "Armadura Ligera",
+      "location": "Guarida del Ladrón - Dormitorio"
+    },
+    {
+      "id": "52",
+      "name": "Rislav el Justo",
+      "skill": "Armadura Ligera",
+      "location": "Torre Valtheim"
+    },
+    {
+      "id": "53",
+      "name": "El Refugio de los Refugiados",
+      "skill": "Armadura Ligera",
+      "location": "Cueva del Contrabandista"
+    },
+    {
+      "id": "54",
+      "name": "Jornada al Oeste",
+      "skill": "Armadura Ligera",
+      "location": "Posada Vilemyr, Ivarstead"
+    },
+    {
+      "id": "55",
+      "name": "Hielo y Quitina",
+      "skill": "Armadura Ligera",
+      "location": "Skaal Village - Casa del herrero"
+    },
+    {
+      "id": "56",
+      "name": "La Danza del Fuego",
+      "skill": "Arquería",
+      "location": "Fuerte Torre Oscura"
+    },
+    {
+      "id": "57",
+      "name": "El Oro Pálido",
+      "skill": "Arquería",
+      "location": "Campamento de Cazadores"
+    },
+    {
+      "id": "58",
+      "name": "Vernaccus y Bourlor",
+      "skill": "Arquería",
+      "location": "Angi's Camp"
+    },
+    {
+      "id": "59",
+      "name": "El Libro Negro del Arco",
+      "skill": "Arquería",
+      "location": "Dawnstar Sanctuary"
+    },
+    {
+      "id": "60",
+      "name": "El Marksmanship Noble",
+      "skill": "Arquería",
+      "location": "Fuerte Amol - Torre del arquero"
+    },
+    {
+      "id": "61",
+      "name": "2920, Estrella Vespertina",
+      "skill": "Restauración",
+      "location": "Templo de Kynareth, Carrera Blanca"
+    },
+    {
+      "id": "62",
+      "name": "Tratado de los Dioses",
+      "skill": "Restauración",
+      "location": "Templo de los Divinos, Soledad"
+    },
+    {
+      "id": "63",
+      "name": "La Gloria de los Muertos",
+      "skill": "Restauración",
+      "location": "Sala de los Muertos, Falkreath"
+    },
+    {
+      "id": "64",
+      "name": "Racial Phylogeny",
+      "skill": "Restauración",
+      "location": "Colegio de Hibernalia - Arcanaeum"
+    },
+    {
+      "id": "65",
+      "name": "Los Misterios de Curación",
+      "skill": "Restauración",
+      "location": "Cueva del Ermitaño"
+    },
+    {
+      "id": "66",
+      "name": "Antes de la Era de los Hombres",
+      "skill": "Ilusión",
+      "location": "Cueva del Brujo - Estudio"
+    },
+    {
+      "id": "67",
+      "name": "Incidente en Necrom",
+      "skill": "Ilusión",
+      "location": "Fuerte Neugrad - Torre"
+    },
+    {
+      "id": "68",
+      "name": "Misterio de Talara, v2",
+      "skill": "Ilusión",
+      "location": "Colegio de Hibernalia - Cuartos"
+    },
+    {
+      "id": "69",
+      "name": "El Libro Negro de 3E 427",
+      "skill": "Ilusión",
+      "location": "Cueva Brujuleante - Altar"
+    },
+    {
+      "id": "70",
+      "name": "La Mente Astuta",
+      "skill": "Ilusión",
+      "location": "Cueva del Eco - Habitación oculta"
+    },
+    {
+      "id": "71",
+      "name": "Batalla de Sancre Tor",
+      "skill": "Armas a Dos Manos",
+      "location": "Tumba del Rey Borgas"
+    },
+    {
+      "id": "72",
+      "name": "Canciones de los Retornados",
+      "skill": "Armas a Dos Manos",
+      "location": "Túmulo de Volunruud"
+    },
+    {
+      "id": "73",
+      "name": "El Libro de las Dagas",
+      "skill": "Armas a Dos Manos",
+      "location": "Jorrvaskr - Habitación de Kodlak"
+    },
+    {
+      "id": "74",
+      "name": "Rey",
+      "skill": "Armas a Dos Manos",
+      "location": "Saqueador del Páramo - Tienda"
+    },
+    {
+      "id": "75",
+      "name": "Palabras y Filosofía",
+      "skill": "Armas a Dos Manos",
+      "location": "Cueva del Gigante - Sala principal"
+    },
+    {
+      "id": "76",
+      "name": "2920, Lluvia Media",
+      "skill": "Carterismo",
+      "location": "Ratway Warrens, Riften"
+    },
+    {
+      "id": "77",
+      "name": "Pureza de Robo",
+      "skill": "Carterismo",
+      "location": "Cisterna del Gremio de Ladrones"
+    },
+    {
+      "id": "78",
+      "name": "El Lobo Real",
+      "skill": "Carterismo",
+      "location": "Cueva del Bandido - Cofre"
+    },
+    {
+      "id": "79",
+      "name": "Thief of Virtue",
+      "skill": "Carterismo",
+      "location": "Casa de Mercer Frey"
+    },
+    {
+      "id": "80",
+      "name": "El Arte Sutil del Mercader",
+      "skill": "Carterismo",
+      "location": "Almacén del Este, Riften"
+    },
+    {
+      "id": "81",
+      "name": "Habilidad de Comercio",
+      "skill": "Comercio",
+      "location": "Tienda de Belethor, Carrera Blanca"
+    },
+    {
+      "id": "82",
+      "name": "El Mercader Rico",
+      "skill": "Comercio",
+      "location": "Mercado de Riften"
+    },
+    {
+      "id": "83",
+      "name": "El Comprador Precavido",
+      "skill": "Comercio",
+      "location": "Posada Bandeja y Jarra, Carrera Blanca"
+    },
+    {
+      "id": "84",
+      "name": "Comerciantes de Tamriel",
+      "skill": "Comercio",
+      "location": "Almacén General de Pawned Prawn"
+    },
+    {
+      "id": "85",
+      "name": "El Libro del Daedra",
+      "skill": "Comercio",
+      "location": "Tienda de Bits y Piezas, Soledad"
+    },
+    {
+      "id": "86",
+      "name": "Guía de Bolsillo para el Imperio",
+      "skill": "Furtivismo",
+      "location": "Cueva del Contrabandista - Almacén"
+    },
+    {
+      "id": "87",
+      "name": "La Puerta Roja",
+      "skill": "Furtivismo",
+      "location": "Santuario Oscuro - Dormitorio"
+    },
+    {
+      "id": "88",
+      "name": "El Arte del Sigilo",
+      "skill": "Furtivismo",
+      "location": "Gremio de Ladrones - Sala de entrenamiento"
+    },
+    {
+      "id": "89",
+      "name": "Sombras y Susurros",
+      "skill": "Furtivismo",
+      "location": "Cueva del Ladrón - Pasaje secreto"
+    },
+    {
+      "id": "90",
+      "name": "Las Artes Oscuras al Descubierto",
+      "skill": "Furtivismo",
+      "location": "Santuario de la Hermandad Oscura"
+    }
+  ]
+}

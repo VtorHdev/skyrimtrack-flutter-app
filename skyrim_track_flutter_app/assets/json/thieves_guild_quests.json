@@ -1,0 +1,84 @@
+{
+  "quests": [
+    {
+      "id": "1",
+      "name": "Oportunidad Llamando",
+      "description": "Ayuda a Brynjolf en el mercado",
+      "location": "Riften",
+      "prerequisite": "Ninguno",
+      "faction": "iniciación"
+    },
+    {
+      "id": "2",
+      "name": "Tomando Cuidado de los Negocios",
+      "description": "Cobra las deudas pendientes",
+      "location": "Riften",
+      "prerequisite": "Oportunidad Llamando",
+      "faction": "iniciación"
+    },
+    {
+      "id": "3",
+      "name": "Ruina y Dominación",
+      "description": "Únete oficialmente al Gremio",
+      "location": "Ragged Flagon",
+      "prerequisite": "Tomando Cuidado de los Negocios",
+      "faction": "principal"
+    },
+    {
+      "id": "4",
+      "name": "Miel y Veneno",
+      "description": "Investiga a Goldenglow Estate",
+      "location": "Riften",
+      "prerequisite": "Ruina y Dominación",
+      "faction": "principal"
+    },
+    {
+      "id": "5",
+      "name": "Persiguiendo las Sombras",
+      "description": "Investiga a Maven Black-Briar",
+      "location": "Whiterun",
+      "prerequisite": "Miel y Veneno",
+      "faction": "principal"
+    },
+    {
+      "id": "6",
+      "name": "Hablando con el Silencio",
+      "description": "Viaja a Solitude con Mercer",
+      "location": "Solitude",
+      "prerequisite": "Persiguiendo las Sombras",
+      "faction": "principal"
+    },
+    {
+      "id": "7",
+      "name": "Cegado",
+      "description": "Descubre la verdad sobre Mercer",
+      "location": "Riften",
+      "prerequisite": "Hablando con el Silencio",
+      "faction": "principal"
+    },
+    {
+      "id": "8",
+      "name": "Duro de Matar",
+      "description": "Persigue a Mercer Frey",
+      "location": "Irkngthand",
+      "prerequisite": "Cegado",
+      "faction": "principal"
+    },
+    {
+      "id": "9",
+      "name": "Oscuridad Devuelve",
+      "description": "Devuelve la Llave Esqueleto",
+      "location": "Nightingale Hall",
+      "prerequisite": "Duro de Matar",
+      "faction": "principal"
+    },
+    {
+      "id": "10",
+      "name": "Bajo Nueva Administración",
+      "description": "Restaura el Gremio a su antigua gloria",
+      "location": "Varios lugares",
+      "prerequisite": "Oscuridad Devuelve",
+      "faction": "radial"
+    }
+  ]
+}

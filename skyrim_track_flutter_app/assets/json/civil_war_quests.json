@@ -1,0 +1,132 @@
+{
+  "quests": [
+    {
+      "id": "1",
+      "name": "Desatado",
+      "description": "Escapa de la ejecución en Helgen",
+      "location": "Helgen",
+      "prerequisite": "Ninguno",
+      "faction": "prólogo"
+    },
+    {
+      "id": "2",
+      "name": "Únete a la Legión Imperial",
+      "description": "Alístate en la Legión Imperial",
+      "location": "Solitude",
+      "prerequisite": "Desatado",
+      "faction": "imperial"
+    },
+    {
+      "id": "3",
+      "name": "Mensaje a Whiterun",
+      "description": "Entrega un mensaje al Jarl Balgruuf",
+      "location": "Whiterun",
+      "prerequisite": "Únete a la Legión Imperial",
+      "faction": "imperial"
+    },
+    {
+      "id": "4",
+      "name": "Defensa de Whiterun",
+      "description": "Defiende Whiterun del ataque Stormcloak",
+      "location": "Whiterun",
+      "prerequisite": "Mensaje a Whiterun",
+      "faction": "imperial"
+    },
+    {
+      "id": "5",
+      "name": "Reunificación de Skyrim",
+      "description": "Reconquista las fortalezas para el Imperio",
+      "location": "Varios lugares",
+      "prerequisite": "Defensa de Whiterun",
+      "faction": "imperial"
+    },
+    {
+      "id": "6",
+      "name": "Batalla por Windhelm",
+      "description": "Asalta Windhelm y derrota a Ulfric",
+      "location": "Windhelm",
+      "prerequisite": "Reunificación de Skyrim",
+      "faction": "imperial"
+    },
+    {
+      "id": "7",
+      "name": "Únete a los Stormcloaks",
+      "description": "Alístate en el ejército Stormcloak",
+      "location": "Windhelm",
+      "prerequisite": "Desatado",
+      "faction": "stormcloak"
+    },
+    {
+      "id": "8",
+      "name": "Mensaje a Whiterun (Stormcloak)",
+      "description": "Entrega el hacha de Ulfric al Jarl Balgruuf",
+      "location": "Whiterun",
+      "prerequisite": "Únete a los Stormcloaks",
+      "faction": "stormcloak"
+    },
+    {
+      "id": "9",
+      "name": "Batalla por Whiterun",
+      "description": "Conquista Whiterun para los Stormcloaks",
+      "location": "Whiterun",
+      "prerequisite": "Mensaje a Whiterun (Stormcloak)",
+      "faction": "stormcloak"
+    },
+    {
+      "id": "10",
+      "name": "Liberación de Skyrim",
+      "description": "Conquista las fortalezas para los Stormcloaks",
+      "location": "Varios lugares",
+      "prerequisite": "Batalla por Whiterun",
+      "faction": "stormcloak"
+    },
+    {
+      "id": "11",
+      "name": "Batalla por Solitude",
+      "description": "Asalta Solitude y derrota al General Tullius",
+      "location": "Solitude",
+      "prerequisite": "Liberación de Skyrim",
+      "faction": "stormcloak"
+    },
+    {
+      "id": "12",
+      "name": "La Marca Pálida",
+      "description": "Conquista/Defiende Fuerte Dunstad",
+      "location": "Fuerte Dunstad",
+      "prerequisite": "Defensa/Batalla por Whiterun",
+      "faction": "fortaleza"
+    },
+    {
+      "id": "13",
+      "name": "El Alcance",
+      "description": "Conquista/Defiende Fuerte Sungard",
+      "location": "Fuerte Sungard",
+      "prerequisite": "Defensa/Batalla por Whiterun",
+      "faction": "fortaleza"
+    },
+    {
+      "id": "14",
+      "name": "Hjaalmarco",
+      "description": "Conquista/Defiende Fuerte Snowhawk",
+      "location": "Fuerte Snowhawk",
+      "prerequisite": "Defensa/Batalla por Whiterun",
+      "faction": "fortaleza"
+    },
+    {
+      "id": "15",
+      "name": "La Grieta",
+      "description": "Conquista/Defiende Fuerte Greenwall",
+      "location": "Fuerte Greenwall",
+      "prerequisite": "Defensa/Batalla por Whiterun",
+      "faction": "fortaleza"
+    },
+    {
+      "id": "16",
+      "name": "Falkreath",
+      "description": "Conquista/Defiende Fuerte Neugrad",
+      "location": "Fuerte Neugrad",
+      "prerequisite": "Defensa/Batalla por Whiterun",
+      "faction": "fortaleza"
+    }
+  ]
+}

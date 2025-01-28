@@ -1,0 +1,84 @@
+{
+  "quests": [
+    {
+      "id": "1",
+      "name": "Prisionero",
+      "description": "Escapa de Helgen",
+      "location": "Helgen",
+      "prerequisite": "Ninguno",
+      "faction": "acto1"
+    },
+    {
+      "id": "2",
+      "name": "Antes de la Tormenta",
+      "description": "Informa al Jarl Balgruuf sobre el dragón",
+      "location": "Whiterun",
+      "prerequisite": "Prisionero",
+      "faction": "acto1"
+    },
+    {
+      "id": "3",
+      "name": "El Camino de la Voz",
+      "description": "Visita a los Barbas Grises",
+      "location": "Alto Hrothgar",
+      "prerequisite": "Antes de la Tormenta",
+      "faction": "acto1"
+    },
+    {
+      "id": "4",
+      "name": "El Cuerno de Jurgen",
+      "description": "Recupera el Cuerno de Jurgen",
+      "location": "Ustengrav",
+      "prerequisite": "El Camino de la Voz",
+      "faction": "acto1"
+    },
+    {
+      "id": "5",
+      "name": "Diplomacia Draconiana",
+      "description": "Negocia una tregua",
+      "location": "Alto Hrothgar",
+      "prerequisite": "El Cuerno de Jurgen",
+      "faction": "acto2"
+    },
+    {
+      "id": "6",
+      "name": "Anciano Conocimiento",
+      "description": "Aprende sobre el Pergamino Antiguo",
+      "location": "Colegio de Hibernalia",
+      "prerequisite": "Diplomacia Draconiana",
+      "faction": "acto2"
+    },
+    {
+      "id": "7",
+      "name": "La Garganta del Mundo",
+      "description": "Lee el Pergamino Antiguo",
+      "location": "Garganta del Mundo",
+      "prerequisite": "Anciano Conocimiento",
+      "faction": "acto2"
+    },
+    {
+      "id": "8",
+      "name": "Alduin's Bane",
+      "description": "Derrota a Alduin en la Garganta",
+      "location": "Garganta del Mundo",
+      "prerequisite": "La Garganta del Mundo",
+      "faction": "acto3"
+    },
+    {
+      "id": "9",
+      "name": "El Caído",
+      "description": "Captura el dragón en Dragonsreach",
+      "location": "Whiterun",
+      "prerequisite": "Alduin's Bane",
+      "faction": "acto3"
+    },
+    {
+      "id": "10",
+      "name": "Sovngarde Espera",
+      "description": "Derrota a Alduin en Sovngarde",
+      "location": "Sovngarde",
+      "prerequisite": "El Caído",
+      "faction": "acto3"
+    }
+  ]
+}
