@@ -27,7 +27,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      title: 'Skyrim Tracker',
+      title: 'uSkyrim',
       theme: AppTheme.darkTheme,
       routerConfig: appRouter,
     );
