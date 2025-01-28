@@ -8,14 +8,14 @@ class SkillBooksCubit extends Cubit<SkillBooksState> {
   final SkillBooksRepository _repository;
 
   SkillBooksCubit(this._repository) : super(const SkillBooksState.initial()) {
-    _loadSkillBooks();
+    loadItems();
   }
 
-  void _loadSkillBooks() async {
+  Future<void> loadItems() async {
     emit(const SkillBooksState.loading());
     try {
-      final books = await _repository.getSkillBooks();
-      emit(SkillBooksState.loaded(books: books));
+      final items = await _repository.getAll();
+      emit(SkillBooksState.loaded(books: items));
     } catch (e) {
       emit(SkillBooksState.error(e.toString()));
     }
@@ -33,28 +33,19 @@ class SkillBooksCubit extends Cubit<SkillBooksState> {
     );
   }
 
-  void toggleBook(String id) async {
+  void toggleItem(String id) async {
     state.mapOrNull(
       loaded: (state) async {
         try {
-          await _repository.toggleBookRead(id);
-
-          final updatedBooks = state.books.map((book) {
-            if (book.id == id) {
-              return SkillBook(
-                id: book.id,
-                name: book.name,
-                skill: book.skill,
-                location: book.location,
-                isRead: !book.isRead,
-              );
+          await _repository.toggleMarked(id);
+          final updatedItems = state.books.map((item) {
+            if (item.id == id) {
+              return item.copyWith(isRead: !item.isRead);
             }
-            return book;
+            return item;
           }).toList();
-
-          emit(state.copyWith(books: updatedBooks));
+          emit(state.copyWith(books: updatedItems));
         } catch (e) {
-          // Opcionalmente manejar el error
           emit(SkillBooksState.error(e.toString()));
         }
       },

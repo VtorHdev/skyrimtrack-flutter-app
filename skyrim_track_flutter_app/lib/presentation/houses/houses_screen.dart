@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '/domain/enums/enchantment_sort.dart';
+import '/domain/enums/house_sort.dart';
 import '/presentation/shared/widgets/item_list.dart';
 import '/presentation/shared/widgets/item_card.dart';
-import 'cubit/enchantments_cubit.dart';
-import 'cubit/enchantments_state.dart';
+import 'cubit/houses_cubit.dart';
+import 'cubit/houses_state.dart';
 
-class EnchantmentsScreen extends StatelessWidget {
-  const EnchantmentsScreen({super.key});
+class HousesScreen extends StatelessWidget {
+  const HousesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Encantamientos'),
+        title: const Text('Casas'),
         actions: const [_SortButton()],
       ),
       body: Column(
         children: [
           const _SearchField(),
           Expanded(
-            child: BlocBuilder<EnchantmentsCubit, EnchantmentsState>(
+            child: BlocBuilder<HousesCubit, HousesState>(
               builder: (context, state) => state.map(
                 initial: (_) => const SizedBox.shrink(),
                 loading: (_) => const Center(
@@ -33,20 +33,22 @@ class EnchantmentsScreen extends StatelessWidget {
                   ),
                 ),
                 loaded: (_) {
-                  final enchantments = context
-                      .read<EnchantmentsCubit>()
-                      .getFilteredAndSortedEnchantments();
+                  final houses =
+                      context.read<HousesCubit>().getFilteredAndSortedHouses();
                   return ItemList(
-                    itemCount: enchantments.length,
+                    itemCount: houses.length,
                     itemBuilder: (context, index) => ItemCard(
-                      title: enchantments[index].name,
-                      description: enchantments[index].effect,
-                      isMarked: enchantments[index].isLearned,
+                      title: houses[index].name,
+                      subtitle: houses[index].location,
+                      description: '''${houses[index].description}
+${houses[index].isDLC ? '\nDLC: ${houses[index].dlcName ?? ""}' : ''}
+Requisitos: ${houses[index].requirements}''',
+                      isMarked: houses[index].isAcquired,
                       onTap: () => context
-                          .read<EnchantmentsCubit>()
-                          .toggleItem(enchantments[index].id),
+                          .read<HousesCubit>()
+                          .toggleItem(houses[index].id),
                     ),
-                    emptyMessage: 'No se encontraron encantamientos',
+                    emptyMessage: 'No se encontraron casas',
                   );
                 },
               ),
@@ -87,7 +89,7 @@ class _SearchField extends StatelessWidget {
             child: TextField(
               style: theme.textTheme.bodyMedium,
               decoration: InputDecoration(
-                hintText: 'Buscar encantamientos...',
+                hintText: 'Buscar casas...',
                 hintStyle: theme.textTheme.bodyMedium?.copyWith(
                   color: theme.colorScheme.onSurface.withOpacity(0.5),
                 ),
@@ -95,7 +97,7 @@ class _SearchField extends StatelessWidget {
                 isDense: true,
                 contentPadding: const EdgeInsets.symmetric(vertical: 8),
               ),
-              onChanged: context.read<EnchantmentsCubit>().updateSearch,
+              onChanged: context.read<HousesCubit>().updateSearch,
             ),
           ),
         ],
@@ -109,17 +111,25 @@ class _SortButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PopupMenuButton<EnchantmentSort>(
+    return PopupMenuButton<HouseSort>(
       icon: const Icon(Icons.sort),
-      onSelected: context.read<EnchantmentsCubit>().updateSort,
-      itemBuilder: (context) => [
-        const PopupMenuItem(
-          value: EnchantmentSort.name,
+      onSelected: context.read<HousesCubit>().updateSort,
+      itemBuilder: (context) => const [
+        PopupMenuItem(
+          value: HouseSort.name,
           child: Text('Ordenar por nombre'),
         ),
-        const PopupMenuItem(
-          value: EnchantmentSort.status,
+        PopupMenuItem(
+          value: HouseSort.location,
+          child: Text('Ordenar por ubicación'),
+        ),
+        PopupMenuItem(
+          value: HouseSort.status,
           child: Text('Ordenar por estado'),
+        ),
+        PopupMenuItem(
+          value: HouseSort.dlc,
+          child: Text('Ordenar por DLC'),
         ),
       ],
     );

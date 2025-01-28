@@ -8,12 +8,12 @@ class SkillBooksRepositoryImpl implements SkillBooksRepository {
   SkillBooksRepositoryImpl(this._localDatasource);
 
   @override
-  Future<List<SkillBook>> getSkillBooks() {
-    return _localDatasource.getSkillBooks();
+  Future<List<SkillBook>> getAll() {
+    return _localDatasource.getAll();
   }
 
   @override
-  Future<void> toggleBookRead(String id) {
-    return _localDatasource.toggleBookRead(id);
+  Future<void> toggleMarked(String id) {
+    return _localDatasource.toggleMarked(id);
   }
 }

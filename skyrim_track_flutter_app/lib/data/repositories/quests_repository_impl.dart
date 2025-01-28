@@ -4,39 +4,17 @@ import '/domain/repositories/quests_repository.dart';
 import '/data/datasources/local/quests_local_datasource.dart';
 
 class QuestsRepositoryImpl implements QuestsRepository {
-  final QuestsLocalDatasource _questsDataSource;
+  final QuestsLocalDatasource _localDatasource;
 
-  QuestsRepositoryImpl(this._questsDataSource);
-
-  @override
-  Future<List<Quest>> getMainQuests() =>
-      _questsDataSource.getQuests(QuestType.main);
+  QuestsRepositoryImpl(this._localDatasource);
 
   @override
-  Future<List<Quest>> getWinterholdQuests() =>
-      _questsDataSource.getQuests(QuestType.winterhold);
+  Future<List<Quest>> getQuests(QuestType type) {
+    return _localDatasource.getQuests(type);
+  }
 
   @override
-  Future<List<Quest>> getDarkBrotherhoodQuests() =>
-      _questsDataSource.getQuests(QuestType.darkBrotherhood);
-
-  @override
-  Future<List<Quest>> getCompanionsQuests() =>
-      _questsDataSource.getQuests(QuestType.companions);
-
-  @override
-  Future<List<Quest>> getThievesGuildQuests() =>
-      _questsDataSource.getQuests(QuestType.thievesGuild);
-
-  @override
-  Future<List<Quest>> getCivilWarQuests() =>
-      _questsDataSource.getQuests(QuestType.civilWar);
-
-  @override
-  Future<List<Quest>> getDaedricQuests() =>
-      _questsDataSource.getQuests(QuestType.daedric);
-
-  @override
-  Future<void> toggleQuestCompleted(QuestType type, String id) =>
-      _questsDataSource.toggleQuestCompleted(type, id);
+  Future<void> toggleMarked(QuestType type, String id) {
+    return _localDatasource.toggleQuestCompleted(type, id);
+  }
 }

@@ -8,12 +8,12 @@ class EnchantmentsRepositoryImpl implements EnchantmentsRepository {
   EnchantmentsRepositoryImpl(this._localDatasource);
 
   @override
-  Future<List<Enchantment>> getEnchantments() {
-    return _localDatasource.getEnchantments();
+  Future<List<Enchantment>> getAll() {
+    return _localDatasource.getAll();
   }
 
   @override
-  Future<void> toggleEnchantmentLearned(String id) {
-    return _localDatasource.toggleEnchantmentLearned(id);
+  Future<void> toggleMarked(String id) {
+    return _localDatasource.toggleMarked(id);
   }
 }

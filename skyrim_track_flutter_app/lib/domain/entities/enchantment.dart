@@ -28,4 +28,17 @@ class Enchantment {
         magnitude: json['magnitude'] ?? 0,
         isLearned: isLearned,
       );
+
+  Enchantment copyWith({
+    bool? isLearned,
+  }) =>
+      Enchantment(
+        id: id,
+        name: name,
+        effect: effect,
+        type: type,
+        source: source,
+        magnitude: magnitude,
+        isLearned: isLearned ?? this.isLearned,
+      );
 }

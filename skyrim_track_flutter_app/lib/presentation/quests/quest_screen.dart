@@ -59,7 +59,7 @@ class QuestScreen extends StatelessWidget {
                             : null,
                         isMarked: quest.isCompleted,
                         isEnabled: isEnabled,
-                        onTap: () => cubit.toggleQuest(quest.id),
+                        onTap: () => cubit.toggleItem(quest.id),
                       );
                     },
                     emptyMessage: 'No se encontraron misiones',

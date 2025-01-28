@@ -22,4 +22,15 @@ class SkillBook {
         location: json['location'],
         isRead: isRead,
       );
+
+  SkillBook copyWith({
+    bool? isRead,
+  }) =>
+      SkillBook(
+        id: id,
+        name: name,
+        skill: skill,
+        location: location,
+        isRead: isRead ?? this.isRead,
+      );
 }

@@ -1,0 +1,80 @@
+{
+  "houses": [
+    {
+      "id": "1",
+      "name": "Brisa Breezehome",
+      "location": "Whiterun",
+      "description": "Casa básica en el distrito de los Vientos de Whiterun",
+      "requirements": "Completar 'Antes de la Tormenta' y ser Thane de Whiterun",
+      "isDLC": false
+    },
+    {
+      "id": "2",
+      "name": "Mansión Proudspire",
+      "location": "Solitude",
+      "description": "Mansión lujosa en el distrito noble de Solitude",
+      "requirements": "Ser Thane de Solitude",
+      "isDLC": false
+    },
+    {
+      "id": "3",
+      "name": "Honeyside",
+      "location": "Riften",
+      "description": "Casa con jardín y acceso al muelle de Riften",
+      "requirements": "Ser Thane de Riften",
+      "isDLC": false
+    },
+    {
+      "id": "4",
+      "name": "Vlindrel Hall",
+      "location": "Markarth",
+      "description": "Casa dwemer en la Ciudad de Piedra",
+      "requirements": "Ser Thane de Markarth",
+      "isDLC": false
+    },
+    {
+      "id": "5",
+      "name": "Hjerim",
+      "location": "Windhelm",
+      "description": "Casa grande en el Barrio de los Valientes",
+      "requirements": "Completar 'Sangre en la Nieve' y ser Thane de Windhelm",
+      "isDLC": false
+    },
+    {
+      "id": "6",
+      "name": "Mansión del Lago",
+      "location": "Falkreath",
+      "description": "Casa personalizable junto al lago",
+      "requirements": "Ser Thane de Falkreath y comprar los materiales",
+      "isDLC": true,
+      "dlcName": "Hearthfire"
+    },
+    {
+      "id": "7",
+      "name": "Mansión Heljarchen",
+      "location": "Pale",
+      "description": "Casa personalizable en la tundra",
+      "requirements": "Ser Thane de Pale y comprar los materiales",
+      "isDLC": true,
+      "dlcName": "Hearthfire"
+    },
+    {
+      "id": "8",
+      "name": "Mansión Windstad",
+      "location": "Hjaalmarch",
+      "description": "Casa personalizable en el pantano",
+      "requirements": "Ser Thane de Morthal y comprar los materiales",
+      "isDLC": true,
+      "dlcName": "Hearthfire"
+    },
+    {
+      "id": "9",
+      "name": "Severin Manor",
+      "location": "Raven Rock, Solstheim",
+      "description": "Mansión en Raven Rock, otorgada por completar misiones",
+      "requirements": "Completar 'Servir o Sufrir' en Solstheim",
+      "isDLC": true,
+      "dlcName": "Dragonborn"
+    }
+  ]
+}

@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: ListView.separated(
         padding: const EdgeInsets.symmetric(vertical: 16),
-        itemCount: 3,
+        itemCount: 4,
         separatorBuilder: (context, index) => Divider(
           height: 1,
           color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
@@ -37,6 +37,12 @@ class HomeScreen extends StatelessWidget {
                 title: 'Misiones',
                 icon: Icons.assignment,
                 onTap: () => context.pushNamed(AppRoutes.questCategories.name),
+              );
+            case 3:
+              return _FeatureCard(
+                title: 'Casas',
+                icon: Icons.home,
+                onTap: () => context.pushNamed(AppRoutes.houses.name),
               );
             default:
               return const SizedBox.shrink();

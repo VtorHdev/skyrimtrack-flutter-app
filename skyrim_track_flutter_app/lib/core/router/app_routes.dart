@@ -24,6 +24,11 @@ class AppRoutes {
     path: '/skill-books',
   );
 
+  static const houses = RouteData(
+    name: 'houses',
+    path: '/houses',
+  );
+
   static const questCategories = RouteData(
     name: 'questCategories',
     path: '/quests',

@@ -9,14 +9,14 @@ class EnchantmentsCubit extends Cubit<EnchantmentsState> {
 
   EnchantmentsCubit(this._repository)
       : super(const EnchantmentsState.initial()) {
-    _loadEnchantments();
+    loadItems();
   }
 
-  void _loadEnchantments() async {
+  Future<void> loadItems() async {
     emit(const EnchantmentsState.loading());
     try {
-      final enchantments = await _repository.getEnchantments();
-      emit(EnchantmentsState.loaded(enchantments: enchantments));
+      final items = await _repository.getAll();
+      emit(EnchantmentsState.loaded(enchantments: items));
     } catch (e) {
       emit(EnchantmentsState.error(e.toString()));
     }
@@ -34,28 +34,18 @@ class EnchantmentsCubit extends Cubit<EnchantmentsState> {
     );
   }
 
-  void toggleEnchantment(String id) async {
+  void toggleItem(String id) async {
     state.mapOrNull(
       loaded: (state) async {
         try {
-          await _repository.toggleEnchantmentLearned(id);
-
-          final updatedEnchantments = state.enchantments.map((enchantment) {
-            if (enchantment.id == id) {
-              return Enchantment(
-                id: enchantment.id,
-                name: enchantment.name,
-                effect: enchantment.effect,
-                type: enchantment.type,
-                source: enchantment.source,
-                magnitude: enchantment.magnitude,
-                isLearned: !enchantment.isLearned,
-              );
+          await _repository.toggleMarked(id);
+          final updatedItems = state.enchantments.map((item) {
+            if (item.id == id) {
+              return item.copyWith(isLearned: !item.isLearned);
             }
-            return enchantment;
+            return item;
           }).toList();
-
-          emit(state.copyWith(enchantments: updatedEnchantments));
+          emit(state.copyWith(enchantments: updatedItems));
         } catch (e) {
           emit(EnchantmentsState.error(e.toString()));
         }

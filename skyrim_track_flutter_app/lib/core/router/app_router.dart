@@ -15,6 +15,9 @@ import '/presentation/quests/cubit/quests_cubit.dart';
 import 'app_routes.dart';
 import '/presentation/quests/quest_categories_screen.dart';
 import 'package:get_it/get_it.dart';
+import '/presentation/houses/houses_screen.dart';
+import '/presentation/houses/cubit/houses_cubit.dart';
+import '/domain/repositories/houses_repository.dart';
 
 final navigationKey = GlobalKey<NavigatorState>();
 
@@ -58,6 +61,14 @@ final appRouter = GoRouter(
     _createSkillBooksRoute(),
     ..._createQuestRoutes(),
     _createQuestCategoriesRoute(),
+    GoRoute(
+      path: AppRoutes.houses.path,
+      name: AppRoutes.houses.name,
+      builder: (_, __) => BlocProvider(
+        create: (_) => HousesCubit(GetIt.I<HousesRepository>()),
+        child: const HousesScreen(),
+      ),
+    ),
   ],
   errorBuilder: (context, state) => const HomeScreen(),
 );

@@ -5,31 +5,36 @@ import '/core/constants/tracked_items.dart';
 import '/core/services/local_storage_service.dart';
 
 abstract class SkillBooksLocalDatasource {
-  Future<List<SkillBook>> getSkillBooks();
-  Future<void> toggleBookRead(String id);
+  Future<List<SkillBook>> getAll();
+  Future<void> toggleMarked(String id);
 }
 
 class SkillBooksLocalDatasourceImpl implements SkillBooksLocalDatasource {
   final LocalStorageService _storage;
+  final _jsonPath = 'assets/json/skill_books.json';
+  final _jsonKey = 'skill_books';
 
   SkillBooksLocalDatasourceImpl(this._storage);
 
   @override
-  Future<List<SkillBook>> getSkillBooks() async {
-    final jsonString =
-        await rootBundle.loadString('assets/json/skill_books.json');
-    final json = jsonDecode(jsonString);
-    final List<dynamic> jsonList = json['skill_books'];
-    final readIds = _storage.getMarkedIds(TrackedItem.skillBooks);
+  Future<List<SkillBook>> getAll() async {
+    try {
+      final jsonString = await rootBundle.loadString(_jsonPath);
+      final json = jsonDecode(jsonString);
+      final List<dynamic> jsonList = json[_jsonKey];
+      final markedIds = _storage.getMarkedIds(TrackedItem.skillBooks);
 
-    return jsonList
-        .map((json) =>
-            SkillBook.fromJson(json, isRead: readIds.contains(json['id'])))
-        .toList();
+      return jsonList
+          .map((json) =>
+              SkillBook.fromJson(json, isRead: markedIds.contains(json['id'])))
+          .toList();
+    } catch (e) {
+      throw Exception('Error loading skill books: $e');
+    }
   }
 
   @override
-  Future<void> toggleBookRead(String id) async {
+  Future<void> toggleMarked(String id) async {
     await _storage.toggleMarkedId(TrackedItem.skillBooks, id);
   }
 }

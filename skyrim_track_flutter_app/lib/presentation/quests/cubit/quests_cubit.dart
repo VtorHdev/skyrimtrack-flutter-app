@@ -11,23 +11,14 @@ class QuestsCubit extends Cubit<QuestsState> {
 
   QuestsCubit(this._repository, this._questType)
       : super(const QuestsState.initial()) {
-    loadQuests();
+    loadItems();
   }
 
-  Future<void> loadQuests() async {
+  Future<void> loadItems() async {
     emit(const QuestsState.loading());
     try {
-      final quests = switch (_questType) {
-        QuestType.main => await _repository.getMainQuests(),
-        QuestType.winterhold => await _repository.getWinterholdQuests(),
-        QuestType.darkBrotherhood =>
-          await _repository.getDarkBrotherhoodQuests(),
-        QuestType.companions => await _repository.getCompanionsQuests(),
-        QuestType.thievesGuild => await _repository.getThievesGuildQuests(),
-        QuestType.civilWar => await _repository.getCivilWarQuests(),
-        QuestType.daedric => await _repository.getDaedricQuests(),
-      };
-      emit(QuestsState.loaded(quests: quests));
+      final items = await _repository.getQuests(_questType);
+      emit(QuestsState.loaded(quests: items));
     } catch (e) {
       emit(QuestsState.error(e.toString()));
     }
@@ -70,25 +61,21 @@ class QuestsCubit extends Cubit<QuestsState> {
         [];
   }
 
-  void toggleQuest(String id) async {
+  void toggleItem(String id) async {
     state.mapOrNull(
       loaded: (state) async {
         final quest = state.quests.firstWhere((q) => q.id == id);
-
-        // Solo permitir toggle si la misión está habilitada
         if (!isQuestEnabled(quest, state.quests)) return;
 
         try {
-          await _repository.toggleQuestCompleted(_questType, id);
-
-          final updatedQuests = state.quests.map((quest) {
-            if (quest.id == id) {
-              return quest.copyWith(isCompleted: !quest.isCompleted);
+          await _repository.toggleMarked(_questType, id);
+          final updatedItems = state.quests.map((item) {
+            if (item.id == id) {
+              return item.copyWith(isCompleted: !item.isCompleted);
             }
-            return quest;
+            return item;
           }).toList();
-
-          _filterAndSortQuests(state.copyWith(quests: updatedQuests));
+          emit(state.copyWith(quests: updatedItems));
         } catch (e) {
           emit(QuestsState.error(e.toString()));
         }

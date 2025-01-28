@@ -36,8 +36,10 @@ class QuestsLocalDatasourceImpl implements QuestsLocalDatasource {
         return TrackedItem.thievesQuests;
       case QuestType.daedric:
         return TrackedItem.daedricQuests;
-      default:
-        throw Exception('Quest type not supported for tracking: $type');
+      case QuestType.companions:
+        return TrackedItem.companionsQuests;
+      case QuestType.civilWar:
+        return TrackedItem.civilWarQuests;
     }
   }
 

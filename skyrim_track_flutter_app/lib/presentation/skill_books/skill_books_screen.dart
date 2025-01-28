@@ -47,7 +47,7 @@ class SkillBooksScreen extends StatelessWidget {
                       isMarked: books[index].isRead,
                       onTap: () => context
                           .read<SkillBooksCubit>()
-                          .toggleBook(books[index].id),
+                          .toggleItem(books[index].id),
                     ),
                     emptyMessage: 'No se encontraron libros',
                   );
