@@ -1,6 +1,6 @@
 # USkyrim Progress Tracker 🎮
 
-[![Flutter CI](https://github.com/yourusername/uskyrim/actions/workflows/dart.yml/badge.svg)](https://github.com/yourusername/uskyrim/actions/workflows/dart.yml)
+[![Flutter CI](https://github.com/VtorHdev/uskyrim/actions/workflows/dart.yml/badge.svg)](https://github.com/VtorHdev/uskyrim/actions/workflows/dart.yml)
 [![style: flutter_lints](https://img.shields.io/badge/style-flutter__lints-blue)](https://pub.dev/packages/flutter_lints)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
